@@ -1,6 +1,4 @@
 const selectFavorateButtonIds=[];
-
-  const wishlistCount$ = document.getElementById("wishlistCount")
   
 
   const productsElement = document.getElementById("products")

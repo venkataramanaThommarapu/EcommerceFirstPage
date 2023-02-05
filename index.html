@@ -1,83 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Ecommerce</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link position-relative" href="/wishlist.html"
-                  >Wishlist
-                  <span
-                    id="wishlistCount"
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                  >
-                    0
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce cite</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ecommerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="./wishlist.html">Wishlist
+                <span id="wishlistCount"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="input-group my-3">
-            <input
-              type="Search"
-              id="search"
-              class="form-control"
-              placeholder="Enter Product Name"
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-            />
-            <span class="input-group-text" id="basic-addon2">
-              <span class="material-icons-outlined"> search </span>
-            </span>
-          </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="input-group my-3">
+          <input type="Search" id="search" class="form-control" placeholder="Enter Product Name"
+            aria-label="Recipient's username" aria-describedby="basic-addon2" />
+          <span class="input-group-text" id="basic-addon2">
+            <span class="material-icons-outlined"> search </span>
+          </span>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row" id="products"></div>
-    </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./index.js"></script>
-    <script src="./scripts/btn.js"></script>
-    <script src="./scripts/search.js"></script>
-    <script src="./scripts/render.js"></script>
-    <!-- <script src="scripts/consliated.js"></script> -->
-  </body>
+  </div>
+  <div class="container">
+    <div class="row" id="products"></div>
+  </div>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./index.js"></script> -->
+  <script src="./home/home.js"></script>
+  <script src="./faviorate button/favorateBtn.js"></script>
+  <script src="./render/render.js"></script>
+  <script src="./search/search.js"></script>
+  <!-- <script src="./consolidated.js"></script> -->
+</body>
+
 </html>
